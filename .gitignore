@@ -1,0 +1,49 @@
+
+---
+
+# `.gitignore`
+
+Use this in your project root:
+
+```gitignore
+# Rust
+/target
+**/*.rs.bk
+
+# Cargo
+# Keep Cargo.lock for binaries/app projects
+# Remove the next line only if you intentionally want to ignore it
+# Cargo.lock
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Postgres / local db exports
+*.sql
+*.dump
+
+# Coverage / profiling
+coverage/
+*.profraw
+*.profdata
+
+# OS generated files
+Thumbs.db
